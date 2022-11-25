@@ -1,0 +1,15 @@
+POST http://localhost:9000/api/users HTTP/1.1
+content-Type: application/json
+
+{
+    "username": "Nikola Tesla",
+    "email": "nikolatesla@gmail.com",
+    "password": "1234",
+    "nickname": "loco"
+}
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/634f3214718bcd2241332281 HTTP/1.1
+
