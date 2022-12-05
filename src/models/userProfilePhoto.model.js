@@ -10,13 +10,13 @@ const userProfilePhotoSchema= mongoose.Schema( {
         type: mongoose.Types.ObjectId,
         ref: 'users',
         required: false,
-        unique: true,
+        unique: false,
         
     },
     imageURL:{
         type: String,
         required:true,
-        
+        unique: false        
         
     },
     createdAt:{

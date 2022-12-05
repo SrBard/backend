@@ -28,7 +28,8 @@ const getSchema = (type) => {
                  userName: Joi.string().required(),
                  email: Joi.string().email().required(),
                  password: Joi.string().required(),
-                 confirmPassword: Joi.string().required(),
+                 nationality: Joi.string().required(),
+                 birthday: Joi.string().required()
                  
             })
         }

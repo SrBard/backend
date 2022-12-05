@@ -1,3 +1,4 @@
+const { string } = require('joi');
 const mongoose = require('mongoose');
 
 //id's are given for default by mongodb
@@ -25,6 +26,16 @@ const userSchema= mongoose.Schema( {
         type: Date,
         default: Date.now()
 
+    },
+    nationality:{
+        type: String,
+        required: true,
+        lowercase:true
+    },
+
+    birthday:{
+        type: String,
+        required: true,
     }
 
  });
