@@ -5,7 +5,7 @@
 *    ttl: '7d' // 7 days
 */
 
-require('dotenv').config();
+require('dotenv').config({path:'../.env'});
 module.exports = { 
     secret: process.env.JWT_SECRET,
     ttl: '7d'
