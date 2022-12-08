@@ -14,7 +14,9 @@ exports.register = async (req, res) => {
     
 
     if(isExist) {
+        console.log('simon valio verga')
         return res.status(400).json({ error: 'Email already exists.' });
+        
         
     }
 

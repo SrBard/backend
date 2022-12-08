@@ -1,4 +1,4 @@
-const { string } = require('joi');
+
 const mongoose = require('mongoose');
 
 //id's are given for default by mongodb
